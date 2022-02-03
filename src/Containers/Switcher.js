@@ -20,9 +20,9 @@ class Switcher extends React.Component  {
 
         return  (
             <div className="btn" > 
-                <button onClick={actionGreen} style={{background: color, backgroundColor:"green"}}>GREEN</button>
-                <button onClick={actionRed} style={{background: color, backgroundColor:"red"}}>RED</button>
-                <button onClick={actionBlue} style={{background: color, backgroundColor:"blue" }}>BLUE</button>
+                <button onClick={() => actionGreen()} style={{background: color, backgroundColor:"green"}}>GREEN</button>
+                <button onClick={() => actionRed()}style={{background: color, backgroundColor:"red"}}>RED</button>
+                <button onClick={() => actionBlue()} style={{background: color, backgroundColor:"blue" }}>BLUE</button>
             </div>
         )
     }
